@@ -6,9 +6,7 @@ function App() {
   const [list, setList] = useState("");
   const [add, setAdd] = useState([]);
 
-
-
-  function addHandler() {
+  function addHandler(list) {
     setAdd((prevItem) => {
       return [...prevItem, list];
     });
